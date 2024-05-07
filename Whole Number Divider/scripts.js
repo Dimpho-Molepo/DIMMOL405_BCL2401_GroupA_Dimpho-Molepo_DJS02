@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
     result.classList.add("error-message");
     result.innerText = "Division not performed. Invalid number provided. Try again";
     console.error(new Error("Invalid result, divider can not be zero"));
-  } else if (dividend === '' && divider === ''){
+  } else if (!dividend || !divider ){
     result.classList.add("error-message");
     result.innerText = "Division not performed. Both values are required in inputs. Try again.";
     console.error(new Error("Both values are required in inputs."))
