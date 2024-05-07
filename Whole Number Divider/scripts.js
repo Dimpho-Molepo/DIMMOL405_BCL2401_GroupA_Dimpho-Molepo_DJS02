@@ -8,6 +8,10 @@ form.addEventListener("submit", (event) => {
 
   result.innerText = Math.floor(dividend / divider);
 
+  if (divider === "0" ) {
+    result.innerText = "Division not performed. Invalid number provided. Try again";
+  }
+
   if (dividend === '' && divider === ''){
     result.innerText = "Division not performed. Both values are required in inputs. Try again.";
   }
@@ -18,5 +22,5 @@ form.addEventListener("submit", (event) => {
     const errorHeading = document.querySelector("h1")
     errorHeading.textContent = "Something critical went wrong. Please reload the page"
     document.body.appendChild(errorHeading);
-
+  }
 });
