@@ -12,5 +12,11 @@ form.addEventListener("submit", (event) => {
     result.innerText = "Division not performed. Both values are required in inputs. Try again.";
   }
 
-  
+  if (dividend.match(/\w\d\W/i) && divider.match(/\w\d\W/i)){
+    const errorWarning = document.createElement("h1");
+    errorWarning.innerText = "Something critical went wrong. Please reload the page"
+    document.body.append(errorWarning);
+    console.trace();
+  }
+   
 });
