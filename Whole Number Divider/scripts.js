@@ -11,11 +11,13 @@ form.addEventListener("submit", (event) => {
   if (divider === "0" ) {
     result.classList.add("error-message");
     result.innerText = "Division not performed. Invalid number provided. Try again";
+    console.error(new Error("Invalid reuslt, divider can not be zero"));
   }
 
   if (dividend === '' && divider === ''){
     result.classList.add("error-message");
     result.innerText = "Division not performed. Both values are required in inputs. Try again.";
+    console.error(new Error("Both values are required in inputs."))
   }
 
   if (dividend.match(/[^0-9]/) || divider.match(/[^0-9]/)) {
@@ -23,5 +25,6 @@ form.addEventListener("submit", (event) => {
     criticalError.classList.add("critical-error");
     criticalError.textContent = "Something critical went wrong. Please reload the page"
     document.body.append(criticalError);
+    console.error(new Error("Invalid number"));
   }
 });
