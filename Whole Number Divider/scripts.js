@@ -12,11 +12,11 @@ form.addEventListener("submit", (event) => {
     result.innerText = "Division not performed. Both values are required in inputs. Try again.";
   }
 
-  if (dividend.match(/\w\d\W/i) && divider.match(/\w\d\W/i)){
-    const errorWarning = document.createElement("h1");
-    errorWarning.innerText = "Something critical went wrong. Please reload the page"
-    document.body.append(errorWarning);
-    console.trace();
-  }
-   
+  if (dividend.match(/[^0-9]/) || divider.match(/[^0-9]/)) {
+    form.style.display = "none";
+    result.style.display = "none"
+    const errorHeading = document.querySelector("h1")
+    errorHeading.textContent = "Something critical went wrong. Please reload the page"
+    document.body.appendChild(errorHeading);
+
 });
