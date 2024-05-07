@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
   }
 
   if (dividend.match(/[^0-9]/) || divider.match(/[^0-9]/)) {
-    const criticalError = document.createElement("div")
+    const criticalError = document.createElement("div");
     criticalError.classList.add("critical-error");
     criticalError.textContent = "Something critical went wrong. Please reload the page"
     document.body.append(criticalError);
