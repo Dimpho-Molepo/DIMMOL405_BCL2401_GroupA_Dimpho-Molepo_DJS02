@@ -17,10 +17,9 @@ form.addEventListener("submit", (event) => {
   }
 
   if (dividend.match(/[^0-9]/) || divider.match(/[^0-9]/)) {
-    form.style.display = "none";
-    result.style.display = "none"
-    const errorHeading = document.querySelector("h1")
-    errorHeading.textContent = "Something critical went wrong. Please reload the page"
-    document.body.appendChild(errorHeading);
+    const criticalError = document.createElement("div")
+    criticalError.classList.add("critical-error");
+    criticalError.textContent = "Something critical went wrong. Please reload the page"
+    document.body.append(criticalError);
   }
 });
