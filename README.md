@@ -7,7 +7,7 @@ This project focuses on enhancing a web-based Whole Number Divider application. 
 
 The existing codebase for the Whole Number Divider meets certain user stories but falls short on others. I was tasked to modify and extend the code to address all specified user stories, ensuring a robust, user-friendly application.
 
-![alt text](image.png)
+![image](https://github.com/Dimpho-Molepo/DIMMOL405_BCL2401_GroupA_Dimpho-Molepo_DJS02/assets/136012291/392bc5de-38fc-45a0-b10c-e0853369f7d8)
 
 ## Starter Code
 
