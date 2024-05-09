@@ -25,8 +25,8 @@ form.addEventListener("submit", (event) => {
       result.classList.remove("error-message");
       result.innerText = Math.floor(dividend / divider);
     }
-  } catch (e) {
-    console.log(e.stack);
+  } catch (error) {
+    console.log(error.stack);
   }
     
 });
