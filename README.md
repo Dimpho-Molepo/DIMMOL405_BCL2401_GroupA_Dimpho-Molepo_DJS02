@@ -68,7 +68,7 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 
 ##  Challenges
 
-Understanding the use of Cucumber and the Gherkins syntax was a bit of mind stretch but the Gherkins syntax is easier to diggest because it is very detailed in terms  of what the code must do. 
+Understanding the use of Cucumber and the Gherkins syntax was a bit of mind stretch but the Gherkins syntax is easier to diggest because it is very detailed in terms  of what the code must do. This project help me understand what a call stack is and how to log it the console
 
 ## Learning Outcomes
 
